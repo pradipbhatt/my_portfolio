@@ -10,10 +10,14 @@
     width:350px;
 }
 .header_img img:hover{
-    transform:scale(1.1);
-   transition: ease-in-out;
-   box-shadow: 3px 4px 5px  rgb(37, 23, 23);
+
+    /* transform:scale(1.1);
+     */
+    /* animation: rotate right 2 ease-in-out; */
+   /* transition: ease-in-out; */
+   box-shadow: 3px 4px 5px  rgba(46, 0, 0, 0.528);
    margin-bottom: 20px;
+ 
 }
 
 h1{
@@ -23,8 +27,30 @@ h1{
 h1:hover{
     color:#9c0000;
     text-shadow: 0px 5px 4px #A9A9B3;
+    animation: shimmyimg 1s 1 ease-in ;
 }
 
+@keyframes shimmyimg {
+    0% {
+     transform: rotate(0deg);
+     /* background-color:rgba(136, 17, 17, 0.582); */
+    }
+ 
+    40% {
+     transform: rotate(180deg);
+     /* background-color:rgba(19, 3, 3, 0.461); */
+     /* border: 3px solid green; */
+     
+    }
+ 
+    
+    100% {
+     transform:rotate(360deg);
+     /* background-color:rgba(84, 7, 7, 0.573); */
+    }
+ }
+ 
+ 
 .computer img{
     /* border: 3px solid red; */
     width: fit-content;
@@ -83,3 +109,4 @@ p:hover{
     transform: translateX(20px);
    }
 }
+
