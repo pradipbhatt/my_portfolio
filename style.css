@@ -54,3 +54,32 @@ h1:hover{
 .nav-link {
     font-size: 20px;
 }
+
+p{
+    font-size: 20px;
+    text-align:justify;
+    word-wrap:break-word
+}
+
+p:hover{
+    transform:scale(1.1);
+    animation: shimmy 5s 1 ease-in-out;
+    transition: ease-in-out;
+    text-align:justify;
+    word-wrap:break-word;
+    /* transform: translate(10px, 5px); */
+}
+
+@keyframes shimmy {
+   0% {
+    transform: translateX(-100px);
+   }
+
+   10% {
+    transform: translateX(0px);
+   }
+
+   100% {
+    transform: translateX(20px);
+   }
+}
