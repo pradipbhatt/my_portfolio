@@ -278,3 +278,18 @@ p:hover{
     margin-top: 50px;
     /* border:5px solid red; */
   }
+
+  .skill-table {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-table {
+      flex-direction: column;
+    }
+  }
+  
