@@ -2,34 +2,63 @@
     color: #A9A9B3;
     background-color: rgb(28, 25, 25);
   }
-  
   .header_img {
     align-items: center;
     align-self: center;
     display: flex;
-    max-height: 450px;
-    min-height: 300px;
+    /* max-height: 400px;
+    min-height: 300px; */
     width: 50%;
     margin-bottom: 20px;
     /* border: 5px solid green; */
+    animation: zoomout-right 2s ease-in-out 1;
+  }
+  
+  @keyframes zoomout-right {
+    0% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
   }
   
   .header_img img:hover {
-    /* transform: scale(1.1);
-       */
-    /* animation: rotate right 2 ease-in-out; */
-    /* transition: ease-in-out; */
-    box-shadow: 3px 6px 9mm rgba(173, 150, 150, 0.863);
+    transform: scale(1);
+    /* box-shadow: -6px 3px 9px rgba(53, 18, 18, 0.733); */
     transition: 3s;
-   
   }
   
-
+  
+  @keyframes zoomout {
+    0% {
+     transform: scale((-1));
+     /* background-color:rgba(136, 17, 17, 0.582); */
+    }
+ 
+    40% {
+     transform:translate(1.2);
+     /* background-color:rgba(19, 3, 3, 0.461); */
+     transition: 4s;
+     /* border: 3px solid green; */
+     
+    }
+ 
+    
+    100% {
+     transform:translate(1);
+     /* background-color:rgba(84, 7, 7, 0.573); */
+    }
+ }
 
   
 h1{
     color: #A9A9B3 ;
     text-shadow: 4px 5px 4px rgb(43, 39, 39);
+    padding-top: 10px;
 }
 h1:hover{
     color:#ba9494;
@@ -98,7 +127,7 @@ p{
 
 p:hover{
     transform:scale(1);
-    animation: shimmy 5s  infinite;
+    animation: shimmy 5s  1;
     transition: 2s;
     text-align:justify;
     word-wrap:break-word;
@@ -125,7 +154,7 @@ p:hover{
 
 .right-left p:hover{
     transform:scale(1);
-    animation: right-left 5s  infinite;
+    animation: right-left 5s  1;
     transition: 2s;
     text-align:justify;
     word-wrap:break-word;
