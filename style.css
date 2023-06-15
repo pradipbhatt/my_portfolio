@@ -123,6 +123,30 @@ p:hover{
 }
 
 
+.right-left p:hover{
+    transform:scale(1);
+    animation: right-left 5s  infinite;
+    transition: 2s;
+    text-align:justify;
+    word-wrap:break-word;
+    /* transform: translate(10px, 5px); */
+}
+@keyframes right-left {
+  0% {
+   transform: translateX(150px);
+  }
+
+
+  50% {
+   transform: translateX(-30px);
+   /* color: #ffffff; */
+   /* font-size: 20px; */
+  }
+
+  100% {
+   transform: translateX(0px);
+  }
+}
   .skills {
     text-align: center;
     margin-top: 50px;
