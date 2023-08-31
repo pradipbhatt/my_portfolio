@@ -28,7 +28,7 @@
   
   .header_img img:hover {
     transform: scale(1);
-    /* box-shadow: -6px 3px 9px rgba(53, 18, 18, 0.733); */
+    box-shadow: -3px 3px 9px rgba(226, 0, 0, 0.733);
     transition: 3s;
   }
   
@@ -346,3 +346,18 @@ p:hover{
     }
   }
   
+
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}

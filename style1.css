@@ -1771,3 +1771,18 @@ hr {
 .btn-404 a {
   margin: 0 10px;
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  background-color: #333;
+  color: rgb(160, 13, 13);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+}
