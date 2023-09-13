@@ -132,11 +132,12 @@ p:hover{
     text-align:justify;
     word-wrap:break-word;
     /* transform: translate(10px, 5px); */
+    /* border: 3px solid green; */
 }
 
 @keyframes shimmy {
    0% {
-    transform: translateX(-150px);
+    transform: translateX(-10px);
    }
 
 
