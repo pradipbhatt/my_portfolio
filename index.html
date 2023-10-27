@@ -108,7 +108,7 @@
      crossorigin="anonymous"></script>
   </head>
 
-  <body class="body">
+  <body class="body"  oncontextmenu="return false">
     <div class="container">
       <button id="scrollToTopBtn">↑</button>
 
@@ -401,5 +401,11 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC6V9QX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <script>
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // Prevent the default right-click behavior
+      alert('Right-clicking is disabled on this website. \n Sorry for the inconvinience.');
+    } , false);
+  </script>
   </body>
 </html>
