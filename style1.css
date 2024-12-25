@@ -1414,6 +1414,14 @@ hr {
   .post {
     max-width: 600px;
   }
+
+  /* media query for the small devices */
+  @media screen and (max-width: 600px) {
+    .post {
+      max-width: 400px;
+    }
+    
+  }
 }
 .post-date:after {
   content: '—';
